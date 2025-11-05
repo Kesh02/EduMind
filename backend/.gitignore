@@ -1,0 +1,257 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Keep .env.example
+!.env.example
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+
+# Logs
+logs/
+*.log
+log/
+*.log.*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+nosetests.xml
+test-results/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Docker
+*.tar
+.dockerignore
+
+# ML Models and Data
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.pb
+models/trained/
+data/raw/
+data/processed/
+data/external/
+
+# DVC
+.dvc/cache/
+.dvc/tmp/
+
+# Alembic
+alembic/versions/*.pyc
+
+# FastAPI
+.pytest_cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+
+# Local configuration
+local_settings.py
+local_config.py
+
+# Redis dump
+dump.rdb
+
+# Node modules (if any frontend in backend)
+node_modules/
+
+# Package files
+*.tar.gz
+*.zip
+*.rar
+
+# Editor files
+*.sublime-project
+*.sublime-workspace
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Cache directories
+.cache/
+.sass-cache/
+
+# API keys and secrets
+secrets.json
+credentials.json
+*.pem
+*.key
+*.crt
+
+# Generated documentation
+docs/_build/
+site/
+
+# Profiling data
+*.prof
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+$RECYCLE.BIN/
+Desktop.ini
+
+# Linux
+.directory
+.Trash-*
+
+# Kubernetes secrets (local testing)
+*.secret.yaml
+secrets/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+
+# Google Cloud
+gcloud-service-key.json
+*.json.enc
+
+# AWS
+.aws/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# Benchmarking
+benchmark_results/
+
+# Local only scripts
+local_*.sh
+local_*.py
+
+# Keep important files
+!.gitkeep
+!requirements.txt
+!Dockerfile
+!docker-compose.yml
+!README.md
+!.env.example

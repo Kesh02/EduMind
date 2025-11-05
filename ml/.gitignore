@@ -1,0 +1,70 @@
+# ML-specific .gitignore
+
+# Data files
+data/raw/*
+data/processed/*
+data/external/*
+data/interim/*
+!data/*/.gitkeep
+!data/*/README.md
+
+# Model files
+models/*.joblib
+models/*.pkl
+models/*.pickle
+models/*.h5
+models/*.hdf5
+models/*.pt
+models/*.pth
+models/*.onnx
+models/*.pb
+models/trained/*
+models/checkpoints/*
+!models/.gitkeep
+
+# DVC
+.dvc/cache/
+.dvc/tmp/
+.dvc/plots/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Experiment tracking
+mlruns/
+runs/
+wandb/
+experiments/
+outputs/
+
+# TensorBoard logs
+logs/
+tensorboard/
+
+# Trained model artifacts
+artifacts/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+
+# Keep structure files
+!.gitkeep
+!README.md
+!requirements.txt
