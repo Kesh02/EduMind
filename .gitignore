@@ -3,9 +3,16 @@
 # Turborepo Monorepo
 # ===================================
 
-# ===== TURBOREPO =====
-.turbo/
-.turbo
+# ===== NX =====
+.nx/
+.nx
+nx-cache/
+.nx-cache/
+migrations.json
+dist/
+tmp/
+out-tsc/
+.nx/workspace-data/
 
 # ===== BACKEND =====
 
@@ -237,3 +244,5 @@ temp/
 
 # Storybook build
 **/storybook-static/
+.cursor/rules/nx-rules.mdc
+.github/instructions/nx.instructions.md
