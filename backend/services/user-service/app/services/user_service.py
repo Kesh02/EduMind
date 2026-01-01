@@ -4,6 +4,7 @@ from app.core.security import get_password_hash, verify_password
 from app.models.user import User
 from app.schemas.user import UserCreate, UserUpdate
 
+
 class UserService:
     def get(self, db: Session, user_id: str) -> Optional[User]:
         return db.query(User).filter(User.id == user_id).first()
@@ -35,5 +36,6 @@ class UserService:
         if not verify_password(password, user.hashed_password):
             return None
         return user
+
 
 user_service = UserService()
