@@ -4,9 +4,9 @@
 import time
 import sys
 
-print("="*60)
+print("=" * 60)
 print("BACKEND SERVICE QUICK TEST")
-print("="*60)
+print("=" * 60)
 
 # Test 1: Basic imports
 print("\n[1/4] Testing basic imports...")
@@ -14,6 +14,7 @@ start = time.time()
 try:
     import xgboost
     import numpy as np
+
     print(f"   ✓ Core libraries imported ({time.time()-start:.2f}s)")
 except Exception as e:
     print(f"   ✗ Failed: {e}")
@@ -24,6 +25,7 @@ print("\n[2/4] Loading academic risk service...")
 start = time.time()
 try:
     from app.Services.academic_risk_service import academic_risk_service
+
     print(f"   ✓ Service loaded ({time.time()-start:.2f}s)")
 except Exception as e:
     print(f"   ✗ Failed: {e}")
@@ -45,7 +47,7 @@ start = time.time()
 try:
     from app.schemas.academic_risk import AcademicRiskRequest
     import asyncio
-    
+
     async def test():
         req = AcademicRiskRequest(
             student_id="test",
@@ -58,24 +60,25 @@ try:
             num_of_prev_attempts=0,
             low_performance=0,
             low_engagement=0,
-            has_previous_attempts=0
+            has_previous_attempts=0,
         )
         result = await academic_risk_service.predict(req)
         return result
-    
+
     result = asyncio.run(test())
     print(f"   ✓ Prediction works ({time.time()-start:.2f}s)")
     print(f"   ✓ Risk: {result.risk_level}")
     print(f"   ✓ Confidence: {result.confidence:.1%}")
-    
+
 except Exception as e:
     print(f"   ✗ Failed: {e}")
     import traceback
+
     traceback.print_exc()
     sys.exit(1)
 
-print("\n" + "="*60)
+print("\n" + "=" * 60)
 print("✅ ALL TESTS PASSED - SERVICE IS READY!")
-print("="*60)
+print("=" * 60)
 print("\nYou can now start the API server:")
 print("  uvicorn app.main:app --reload --port 8000")
