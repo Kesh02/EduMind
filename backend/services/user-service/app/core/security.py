@@ -1,7 +1,8 @@
 """Security utilities for authentication"""
 
 from datetime import datetime, timedelta
-from typing import Optional, Any, Union
+from typing import Any, Optional, Union
+
 from jose import jwt
 from passlib.context import CryptContext
 

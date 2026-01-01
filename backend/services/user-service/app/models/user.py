@@ -1,8 +1,11 @@
-from sqlalchemy import Column, String, Boolean, Enum as SQLEnum
-from sqlalchemy.dialects.postgresql import UUID
-import uuid
 import enum
+import uuid
+
 from app.db.base import Base
+from sqlalchemy import Boolean, Column
+from sqlalchemy import Enum as SQLEnum
+from sqlalchemy import String
+from sqlalchemy.dialects.postgresql import UUID
 
 
 class UserRole(str, enum.Enum):
