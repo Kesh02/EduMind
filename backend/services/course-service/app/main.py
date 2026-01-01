@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     LOG_LEVEL: str = "INFO"
     DATABASE_URL: Optional[str] = None
     SECRET_KEY: str = "dev-secret-key"
-    
+
     class Config:
         env_file = ".env"
         case_sensitive = True
@@ -31,6 +31,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 @app.get("/health")
 async def health_check():
